@@ -1,0 +1,15 @@
+5. Build and Run
+
+Build the containers:
+docker-compose build
+
+Run the containers:
+docker-compose up
+
+Run migrations (in another terminal):
+docker-compose exec web python manage.py migrate
+
+Create a superuser:
+docker-compose exec web python manage.py createsuperuser
+
+Access your application at http://127.0.0.1:8000/api/books
